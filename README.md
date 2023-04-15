@@ -1,10 +1,9 @@
-# Countries
+# Redux anecdoce
 
-In this exercise, we created an application, in which one can look at data of various countries. The data are fetched from the API https://restcountries.eu, that provides a lot data for different countries in a machine readable format, a so-called REST API.
+In this exercise, we made a new version of the anecdote voting application from part 1 using Redux.
+As a reminder, this application allows the user to vote between multiple anecdotes and then displays the most popular one.
 
-The user interface is very simple. The country to be shown is found by typing a search query into the search field.
-
-In this application, it is also possible to see the current weather in the country's capital.
+This initial list of anecdotes is stored in the file `db.json`. This file is used by the tool `JSON Server` that acts as a backend server where the data are stored.
 
 ## Start the application
 
@@ -12,11 +11,14 @@ To start an application, do the following :
 
 ```bash
 # Install dependancies
-$ yarn install
-# create a .env file and put there the API KEY for retrieving data from https://weatherstack.com/
-$ echo "REACT_APP_API_KEY=<YOUR-API-KEY>" > .env
+$ npm install
+
+# Start the backend JSON server
+$ npx json-server --port 3001 --watch db.json
+
 # Start the application
-$ yarn start
+$ npm start
 ```
 
-You can then access the app on : http://localhost:3000/
+You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
+You can also see the content of the JSON Server by heading to http://localhost:3001/anecdotes
