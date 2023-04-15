@@ -1,11 +1,8 @@
-# Unicafe
+# Anecdotes
 
-This web application collects customer feedback. There are only three options for feedback: good, neutral, and bad.
+The world of software engineering is filled with anecdotes that distill timeless truths from our field into short one-liners.
 
-While collecting feedbacks, the following statistics are displayed:
-* Total number of colllected feedbacks
-* The average score (good: 1, neutral: 0, bad: -1)
-* The percentage of positive feedback
+This application allows the user to vote between multiple anecdotes and then displays the most popular one.
 
 ## Start the application
 
